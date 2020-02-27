@@ -9,6 +9,7 @@ charset=iso-8859-1" />
 <body>
 <h1>Notícias Dev Media</h1>
 <?php
+    include ('./error.php');
     $link = "http://www.devmedia.com.br/xml/devmedia_full.xml"; 
     //link do arquivo xml
     $xml = simplexml_load_file($link) -> channel; 
